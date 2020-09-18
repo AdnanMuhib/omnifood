@@ -83,3 +83,16 @@
     section { padding: 25px 0; }
     .contact-form { width: 100%; }
 }
+
+
+@supports (-webkit-overflow-scrolling: touch) {
+    /* CSS for iOS devices */
+    /* Fixes issues with Safari Mobile displays background-attachement-fixed is blank.*/
+    header {
+        background-attachment: scroll;
+    }
+ 
+    .section-testimonials {
+        background-attachment: scroll;
+     }
+}
